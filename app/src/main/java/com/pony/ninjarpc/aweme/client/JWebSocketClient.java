@@ -1,4 +1,4 @@
-package com.pony.ninjarpc.client.socket;
+package com.pony.ninjarpc.aweme.client;
 
 import android.util.Log;
 

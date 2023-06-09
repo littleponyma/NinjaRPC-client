@@ -8,7 +8,7 @@
  * ************************************************************
  */
 
-package com.pony.ninjarpc.client.utils;
+package com.pony.ninjarpc.aweme.utils;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;

@@ -1,4 +1,4 @@
-package com.pony.ninjarpc.client.utils;
+package com.pony.ninjarpc.aweme.utils;
 
 
 import android.annotation.SuppressLint;

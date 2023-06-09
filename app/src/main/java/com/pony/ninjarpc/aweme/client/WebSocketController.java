@@ -1,11 +1,11 @@
-package com.pony.ninjarpc.client.socket;
+package com.pony.ninjarpc.aweme.client;
 
 import android.os.Handler;
 import android.os.Message;
 
-import com.pony.ninjarpc.client.common.Constant;
-import com.pony.ninjarpc.client.utils.DeviceUtil;
-import com.pony.ninjarpc.client.utils.VLog;
+import com.pony.ninjarpc.aweme.common.Constant;
+import com.pony.ninjarpc.aweme.utils.DeviceUtil;
+import com.pony.ninjarpc.aweme.utils.VLog;
 
 import org.java_websocket.enums.ReadyState;
 import org.java_websocket.handshake.ServerHandshake;
@@ -30,7 +30,7 @@ public class WebSocketController {
      * 初始化websocket
      */
     public JWebSocketClient initWebSocket(Handler handler) {
-        URI uri = URI.create("ws://" + Constant.URL + "/websocket/" + DeviceUtil.serialNumber());
+        URI uri = URI.create("ws://" + Constant.URL + "/websocket/" + "aweme-"+DeviceUtil.serialNumber());
         //TODO 创建websocket
         client = new JWebSocketClient(uri) {
             @Override

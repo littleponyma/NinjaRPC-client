@@ -1,4 +1,4 @@
-package com.pony.ninjarpc.client.utils;
+package com.pony.ninjarpc.aweme.utils;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,7 +14,7 @@ import java.nio.charset.StandardCharsets;
 public class DeviceUtil {
     @SuppressLint("HardwareIds")
     public static String serialNumber() {
-        ShellUtil.CommandResult commandResult = ShellUtil.execCommand("getprop ro.boot.vbmeta.digest", ShellUtil.checkRootPermission());
+        ShellUtil.CommandResult commandResult = ShellUtil.execCommand("getprop ro.serialno", ShellUtil.checkRootPermission());
         return new String(commandResult.successMsg.getBytes(StandardCharsets.UTF_8));
     }
 
